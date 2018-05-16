@@ -27,4 +27,4 @@ UserSchema.methods.validation = function (passAtt) {
     return bcrypt.compare(passAtt, this.password);
 };
 
-module.exports = mongoose.model('User', UserSchema);
+module.exports = mongoose.model('User', UserSchema, 'users');
